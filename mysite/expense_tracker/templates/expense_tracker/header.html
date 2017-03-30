@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+    <title>Javascript</title>
+    {% load staticfiles %}
+  	<link rel="stylesheet" href="{% static 'personal/css/bootstrap.min.css' %}" type = "text/css"/>
+    <script src="{% static 'expense_tracker/js/main.js' %}" type= "text/js">
+    </script>
+  </head>
+  <body>
+    <h1>Expense Tracker Form.</h1>
+    <form id = "sake">
+      <div class="form-group-date">
+        <label for="example-month-input" class="col-2 col-form-label">Month</label>
+        <div class="col-10">
+          <input class="form-control" type="month" value="2011-08" id="example-month-input">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="Tuition">Tuition</label>
+        <input type="number" name="tuitionfee" value="0">
+      </div>
+      <div class="form-group">
+        <label for="Travel">Travel</label>
+        <input type="number" name="travel" value="0">
+      </div>
+      <div class="form-group">
+        <label for="fandb">Food and Boarding</label>
+        <input type="number" name="fandb" value="0">
+      </div>
+      <div class="form-group">
+        <label for="Miscellaneous">Miscellaneous</label>
+        <input type="number" name="misc" value="0">
+      </div>
+      <div class="form-group">
+        <label for="total">Total</label>
+
+      </div>
+      <button type="button" name="button" onclick="jsFunction()">Submit</button>
+    </form>
+
+  </body>
+</html>
