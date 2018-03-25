@@ -4,5 +4,4 @@ python:
 
 script:
   - echo "probot are you real ?"
-  - echo "fast okay pls"
   - true
