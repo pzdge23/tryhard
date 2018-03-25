@@ -1,0 +1,2 @@
+command: "!merge"
+merge_method: squash
